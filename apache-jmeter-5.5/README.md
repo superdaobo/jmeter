@@ -1,8 +1,8 @@
 <h1 align="center"><img src="https://jmeter.apache.org/images/logo.svg" alt="Apache JMeter logo" /></h1>
 
-An Open Source Java application designed to measure performance and load test applications.
+一个开源的Java应用程序，旨在测量性能和负载测试应用程序。
 
-By The Apache Software Foundation
+由Apache软件基金会提供支持
 
 [![Build Status](https://api.travis-ci.com/apache/jmeter.svg?branch=master)](https://travis-ci.com/apache/jmeter/)
 [![codecov](https://codecov.io/gh/apache/jmeter/branch/master/graph/badge.svg)](https://codecov.io/gh/apache/jmeter)
@@ -12,155 +12,135 @@ By The Apache Software Foundation
 [![Javadocs](https://www.javadoc.io/badge/org.apache.jmeter/ApacheJMeter_core.svg)](https://www.javadoc.io/doc/org.apache.jmeter/ApacheJMeter_core)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/apache/jmeter.svg?style=social)](https://twitter.com/intent/tweet?text=Powerful%20load%20testing%20with%20Apache%20JMeter:&url=https://jmeter.apache.org)
 
-## What Is It?
+## 是什么？
 
-Apache JMeter can measure performance and load test static and dynamic web applications.
+Apache JMeter可以测量性能和负载测试静态和动态Web应用程序。
 
-It can be used to simulate a heavy load on a server, group of servers,
-network or object to test its strength or to analyze overall performance under different load types.
+它可以用于模拟对服务器、服务器组、网络或对象的大负载，以测试其强度或分析不同负载类型下的整体性能。
 
 ![JMeter screen](https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/screenshots/jmeter_screen.png)
 
-## Features
+## 特点
 
-Complete portability and 100% Java.
+完全可移植和100% Java。
 
-Multi-threading allows concurrent sampling by many threads and
-simultaneous sampling of different functions by separate thread groups.
+多线程允许多个线程并发采样，同时由单独的线程组并发采样不同的功能。
 
-### Protocols
+### 协议
 
-Ability to load and performance test many applications/server/protocol types:
+能够加载和性能测试许多应用程序/服务器/协议类型：
 
-- Web - HTTP, HTTPS (Java, NodeJS, PHP, ASP.NET,...)
-- SOAP / REST Webservices
+- Web - HTTP，HTTPS（Java，NodeJS，PHP，ASP.NET等）
+- SOAP / REST Web服务
 - FTP
-- Database via JDBC
+- 通过JDBC的数据库
 - LDAP
-- Message-oriented Middleware (MOM) via JMS
-- Mail - SMTP(S), POP3(S) and IMAP(S)
-- Native commands or shell scripts
+- 通过JMS的消息导向中间件（MOM）
+- 邮件 - SMTP（S），POP3（S）和IMAP（S）
+- 本机命令或shell脚本
 - TCP
-- Java Objects
+- Java对象
 
 ### IDE
 
-Fully featured Test IDE that allows fast Test Plan **recording**
- (from Browsers or native applications), **building** and **debugging**.
+完全功能的测试IDE，可以快速记录测试计划（从浏览器或本地应用程序），构建和调试。
 
-### Command Line
+### 命令行
 
-[Command-line mode (Non GUI / headless mode)](https://jmeter.apache.org/usermanual/get-started.html#non_gui)
-to load test from any Java compatible OS (Linux, Windows, Mac OSX, ...)
+[命令行模式（非GUI / 无头模式）](https://jmeter.apache.org/usermanual/get-started.html#non_gui)
+可在任何支持Java的操作系统（Linux，Windows，Mac OSX等）上进行负载测试。
 
-### Reporting
+### 报告
 
-A complete and ready to present [dynamic HTML report](https://jmeter.apache.org/usermanual/generating-dashboard.html)
+完整且准备好呈现的[动态HTML报告](https://jmeter.apache.org/usermanual/generating-dashboard.html)
 
 ![Dashboard screenshot](https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/screenshots/dashboard/response_time_percentiles_over_time.png)
 
-[Live reporting](https://jmeter.apache.org/usermanual/realtime-results.html)
-into 3rd party databases like InfluxDB or Graphite
+[实时报告](https://jmeter.apache.org/usermanual/realtime-results.html)
+到第三方数据库，如InfluxDB或Graphite
 
 ![Live report](https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/screenshots/grafana_dashboard.png)
 
-### Correlation
+### 关联
 
-Easy correlation through ability to extract data from most popular response formats,
-[HTML](https://jmeter.apache.org/usermanual/component_reference.html#CSS/JQuery_Extractor),
-[JSON](https://jmeter.apache.org/usermanual/component_reference.html#JSON_Extractor),
-[XML](https://jmeter.apache.org/usermanual/component_reference.html#XPath_Extractor) or
-[any textual format](https://jmeter.apache.org/usermanual/component_reference.html#Regular_Expression_Extractor)
+通过从最流行的响应格式（HTML，JSON，XML或任何文本格式）中提取数据的能力，轻松进行关联。
 
-### Highly Extensible Core
+### 高度可扩展的核心
 
-- Pluggable Samplers allow unlimited testing capabilities.
-- **Scriptable Samplers** (JSR223-compatible languages like Groovy).
-- Several load statistics can be chosen with **pluggable tiers**.
-- Data analysis and **visualization plugins** allow great extensibility and personalization.
-- Functions can be used to provide dynamic input to a test or provide data manipulation.
-- Easy Continuous Integration via 3rd party Open Source libraries for Maven, Gradle and Jenkins.
+- 可插入的采样器允许无限的测试能力。
+- **可脚本化的采样器**（支持JSR223兼容语言，如Groovy）。
+- 可以选择多种负载统计数据与**可插入的层**。
+- 数据分析和**可视化插件**允许极大的可扩展性和个性化。
+- 函数可用于为测试提供动态输入或提供数据操作。
+- 通过第三方开源库（如Maven，Gradle和Jenkins）轻松进行持续集成。
 
-## The Latest Version
+## 最新版本
 
-Details of the latest version can be found on the
-[JMeter Apache Project web site](https://jmeter.apache.org/)
+有关最新版本的详细信息，请访问
+[JMeter Apache项目网站](https://jmeter.apache.org/)
 
-## Requirements
+## 要求
 
-The following requirements exist for running Apache JMeter:
+运行Apache JMeter需要满足以下要求：
 
-- Java Interpreter:
+- Java解释器：
 
-  A fully compliant Java 8 Runtime Environment is required
-  for Apache JMeter to execute. A JDK with `keytool` utility is better suited
-  for Recording HTTPS websites.
+  需要完全兼容的Java 8运行时环境来执行Apache JMeter。使用带有`keytool`实用程序的JDK更适合用于记录HTTPS网站。
 
-- Optional jars:
+- 可选的JAR文件：
 
-  Some jars are not included with JMeter.
-  If required, these should be downloaded and placed in the lib directory
-  - JDBC - available from the database supplier
-  - JMS - available from the JMS provider
-  - [Bouncy Castle](https://www.bouncycastle.org/) -
-  only needed for SMIME Assertion
+  JMeter不包含某些JAR文件。如果需要，这些文件应下载并放置在lib目录中。
+  - JDBC - 可从数据库供应商获取
+  - JMS - 可从JMS提供商获取
+  - [Bouncy Castle](https://www.bouncycastle.org/) - 仅在需要SMIME断言时才需要
 
-- Java Compiler (*OPTIONAL*):
+- Java编译器（*可选*）：
 
-  A Java compiler is not needed since the distribution includes a
-  precompiled Java binary archive.
-  > **Note** that a compiler is required to build plugins for Apache JMeter.
+  不需要Java编译器，因为发行版包含预编译的Java二进制存档。
+  > **注意**：构建Apache JMeter插件需要编译器。
 
-## Installation Instructions
+## 安装说明
 
-> **Note** that spaces in directory names can cause problems.
+> **注意**：目录名称中的空格可能会导致问题。
 
-- Release builds
+- 发行版本
 
-  Unpack the binary archive into a suitable directory structure.
+  将二进制存档解压缩到适当的目录结构中。
 
-## Running JMeter
+## 运行JMeter
 
-1. Change to the `bin` directory
-2. Run the `jmeter` (Un\*x) or `jmeter.bat` (Windows) file.
+1. 切换到`bin`目录
+2. 运行`jmeter`（Un\*x）或`jmeter.bat`（Windows）文件。
 
 ### Windows
 
-For Windows, there are also some other scripts which you can drag-and-drop
-a JMX file onto:
+对于Windows，还有一些其他脚本，您可以将JMX文件拖放到这些脚本上：
 
-- `jmeter-n.cmd` - runs the file as a non-GUI test
-- `jmeter-n-r.cmd` - runs the file as a non-GUI remote (client-server) test
-- `jmeter-t.cmd` - loads the file ready to run it as a GUI test
+- `jmeter-n.cmd` - 以非GUI测试方式运行文件
+- `jmeter-n-r.cmd` - 以非GUI远程（客户端-服务器）测试方式运行文件
+- `jmeter-t.cmd` - 加载文件以准备运行GUI测试
 
-## Documentation
+## 文档
 
-The documentation available as of the date of this release is
-also included, in HTML format, in the [printable_docs](printable_docs) directory,
-and it may be browsed starting from the file called [index.html](printable_docs/index.html).
+可用的文档包含在此版本发布日期的HTML格式中，位于[printable_docs](printable_docs)目录中，可以从名为[index.html](printable_docs/index.html)的文件开始浏览。
 
-## Reporting a bug/enhancement
+## 报告错误/增强功能
 
-See [Issue Tracking](https://jmeter.apache.org/issues.html).
+请参阅[问题跟踪](https://jmeter.apache.org/issues.html)。
 
-## Build instructions
+## 构建说明
 
-### Release builds
+### 发行版本
 
-Unpack the source archive into a suitable directory structure.
-Most of the 3rd party library files can be extracted from the binary archive
-by unpacking it into the same directory structure.
+将源代码存档解压缩到适当的目录结构中。大多数第三方库文件可以通过将其解压缩到相同的目录结构中来从二进制存档中提取。
 
-Any optional jars (see above) should be placed in `lib/opt` and/or `lib`.
+任何可选的JAR文件（参见上文）应放置在`lib/opt`和/或`lib`中。
 
-Jars in `lib/opt` will be used for building JMeter and running the unit tests,
-but won't be used at run-time.
+`lib/opt`中的JAR文件将用于构建JMeter和运行单元测试，但不会在运行时使用。
 
-_This is useful for testing what happens if the optional jars are not
-downloaded by other JMeter users._
+_这对于测试其他JMeter用户是否下载了可选的JAR文件很有用。_
 
-If you are behind a proxy, you can set a few build properties in
-`~/.gradle/gradle.properties` for Gradle to use the proxy:
+如果您在代理后面，可以在`~/.gradle/gradle.properties`中设置一些构建属性，以便Gradle使用代理：
 
 ```properties
 systemProp.http.proxyHost=proxy.example.invalid
@@ -173,104 +153,81 @@ systemProp.https.proxyUser=your_user_name
 systemProp.https.proxyPassword=your_password
 ```
 
-### Test builds
+### 测试版本
 
-JMeter is built using Gradle.
+JMeter使用Gradle构建。
 
-The following command builds and tests JMeter:
+以下命令构建和测试JMeter：
 
 ```sh
 ./gradlew build
 ```
 
-If the system does not have a GUI display then:
+如果系统没有GUI显示，则：
 
 ```sh
 ./gradlew build -Djava.awt.headless=true
 ```
 
-The output artifacts (jars, reports) are placed in the `build` folder.
-For instance, binary artifacts can be found under `src/dist/build/distributions`.
+输出的构建产物（JAR文件、报告）将放置在`build`文件夹中。例如，二进制产物可以在`src/dist/build/distributions`下找到。
 
-The following command would compile the application and enable you to run `jmeter`
-from the `bin` directory.
+以下命令将编译应用程序并使您能够从`bin`目录运行`jmeter`。
 
-> **Note** that it completely refreshes `lib/` contents,
-so it would remove custom plugins should you have them installed.
+> **注意**：它会完全刷新`lib/`内容，因此如果您已安装自定义插件，则会删除它们。
 
 ```sh
 ./gradlew createDist
 ```
 
-Alternatively, you could get Gradle to start the GUI:
+或者，您可以让Gradle启动GUI：
 
 ```sh
 ./gradlew runGui
 ```
 
-## Developer Information
+## 开发者信息
 
-Building and contributing is explained in details at
-[building JMeter](https://jmeter.apache.org/building.html)
-and [CONTRIBUTING.md](CONTRIBUTING.md). More information on the tasks available for
-building JMeter with Gradle is available in [gradle.md](gradle.md).
+有关构建和贡献的详细信息，请参阅
+[构建JMeter](https://jmeter.apache.org/building.html)
+和[CONTRIBUTING.md](CONTRIBUTING.md)。有关使用Gradle构建JMeter的可用任务的更多信息，请参阅[gradle.md](gradle.md)。
 
-The code can be obtained from:
+代码可以从以下位置获取：
 
 - https://github.com/apache/jmeter
 - https://gitbox.apache.org/repos/asf/jmeter.git
 
-## Licensing and Legal Information
+## 许可和法律信息
 
-For legal and licensing information, please see the following files:
+有关法律和许可信息，请参阅以下文件：
 
 - [LICENSE](LICENSE)
 - [NOTICE](NOTICE)
 
-## Cryptographic Software Notice
+## 加密软件通知
 
-This distribution may include software that has been designed for use
-with cryptographic software. The country in which you currently reside
-may have restrictions on the import, possession, use, and/or re-export
-to another country, of encryption software. BEFORE using any encryption
-software, please check your country's laws, regulations and policies
-concerning the import, possession, or use, and re-export of encryption
-software, to see if this is permitted. See <https://www.wassenaar.org/>
-for more information.
+此发行版可能包含为使用加密软件而设计的软件。您目前所在的国家/地区可能对导入、拥有、使用和/或重新导出加密软件有限制。在使用任何加密软件之前，请检查您所在国家/地区的法律、法规和政策，以了解是否允许此操作。有关更多信息，请访问<https://www.wassenaar.org/>。
 
-The U.S. Government Department of Commerce, Bureau of Industry and
-Security (BIS), has classified this software as Export Commodity
-Control Number (ECCN) 5D002.C.1, which includes information security
-software using or performing cryptographic functions with asymmetric
-algorithms. The form and manner of this Apache Software Foundation
-distribution makes it eligible for export under the License Exception
-ENC Technology Software Unrestricted (TSU) exception (see the BIS
-Export Administration Regulations, Section 740.13) for both object
-code and source code.
+美国商务部工业和安全局（BIS）将此软件分类为出口商品控制编号（ECCN）5D002.C.1，其中包括使用或执行具有非对称算法的信息安全软件。Apache Software Foundation的发行形式和方式使其符合许可例外ENC Technology Software Unrestricted（TSU）例外（请参阅BIS出口管理条例第740.13节），适用于目标代码和源代码。
 
-The following provides more details on the included software that
-may be subject to export controls on cryptographic software:
+以下提供了有关可能受到加密软件出口控制的软件的更多详细信息：
 
-Apache JMeter interfaces with the
-Java Secure Socket Extension (JSSE) API to provide
+Apache JMeter通过Java Secure Socket Extension（JSSE）API与以下接口：
 
-- HTTPS support
+- HTTPS支持
 
-Apache JMeter interfaces (via Apache HttpClient4) with the
-Java Cryptography Extension (JCE) API to provide
+Apache JMeter通过Apache HttpClient4与以下接口（通过Java Cryptography Extension（JCE）API）：
 
-- NTLM authentication
+- NTLM身份验证
 
-Apache JMeter does not include any implementation of JSSE or JCE.
+Apache JMeter不包含JSSE或JCE的任何实现。
 
-## Thanks
+## 感谢
 
-**Thank you for using Apache JMeter.**
+**感谢您使用Apache JMeter。**
 
-### Third party notices
+### 第三方通知
 
-* Notice for mxparser:
+* mxparser的通知：
 
-  >  This product includes software developed by the Indiana
-  >  University Extreme! Lab.  For further information please visit
-  >  http://www.extreme.indiana.edu/
+  > 本产品包括由印第安纳大学Extreme！实验室开发的软件。有关更多信息，请访问
+  > http://www.extreme.indiana.edu/
